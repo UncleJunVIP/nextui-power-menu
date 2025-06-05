@@ -53,18 +53,24 @@ func main() {
 
 		switch sel.Unwrap().SelectedItem.Metadata.(string) {
 		case "Reboot":
-			gaba.ProcessMessage("Rebooting...", gaba.ProcessMessageOptions{ShowThemeBackground: true}, func() (interface{}, error) {
+			go func() {
+				time.Sleep(3 * time.Second)
 				cmd := exec.Command("reboot")
 				cmd.Start()
-				time.Sleep(5 * time.Second)
+			}()
+			gaba.ProcessMessage("Rebooting...", gaba.ProcessMessageOptions{ShowThemeBackground: true}, func() (interface{}, error) {
+				time.Sleep(10 * time.Second)
 				return nil, nil
 			})
 
 		case "Shutdown":
-			gaba.ProcessMessage("Shutting down...", gaba.ProcessMessageOptions{ShowThemeBackground: true}, func() (interface{}, error) {
+			go func() {
+				time.Sleep(3 * time.Second)
 				cmd := exec.Command("poweroff")
 				cmd.Start()
-				time.Sleep(5 * time.Second)
+			}()
+			gaba.ProcessMessage("Shutting down...", gaba.ProcessMessageOptions{ShowThemeBackground: true}, func() (interface{}, error) {
+				time.Sleep(10 * time.Second)
 				return nil, nil
 			})
 		default:
