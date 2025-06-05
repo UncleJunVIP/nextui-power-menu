@@ -1,0 +1,15 @@
+{
+  "name": "Power Menu",
+  "version": "0.1.0",
+  "type": "TOOL",
+  "description": "Quick options to reboot or shutdown your device.",
+  "author": "K-Wall",
+  "repo_url": "https://github.com/UncleJunVIP/nextui-power-menu",
+  "release_filename": "Power.pak.zip",
+  "changelog": {
+    "v0.1.0": "Initial release!."
+  },
+  "platforms": [
+    "tg5040"
+  ]
+}
