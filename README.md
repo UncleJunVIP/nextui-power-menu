@@ -17,7 +17,7 @@
 
 ### How do I use this Pak?
 
-1. Install it via [Pak Store](https://github.com/UncleJunVIP/nextui-pak-store).
+1. Install it via [Pak Store](https://github.com/UncleJunVIP/nextui-pak-store). It can be found under `System`.
 2. Launch it.
 3. Pick Reboot or Shutdown.
 4. That's all this does...
