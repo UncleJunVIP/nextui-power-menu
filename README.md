@@ -1,8 +1,8 @@
 <div align="center">
 
-<h3 style="font-size: 25px;">
+<h1 style="font-size: 25px;">
     NextUI Power Menu
-</h3>
+</h1>
 
 ## [Download this in Pak Store!](https://github.com/UncleJunVIP/nextui-pak-store)
 

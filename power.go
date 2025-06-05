@@ -56,7 +56,7 @@ func main() {
 			gaba.ProcessMessage("Rebooting...", gaba.ProcessMessageOptions{ShowThemeBackground: true}, func() (interface{}, error) {
 				cmd := exec.Command("reboot")
 				cmd.Start()
-				time.Sleep(2 * time.Second)
+				time.Sleep(5 * time.Second)
 				return nil, nil
 			})
 
@@ -64,7 +64,7 @@ func main() {
 			gaba.ProcessMessage("Shutting down...", gaba.ProcessMessageOptions{ShowThemeBackground: true}, func() (interface{}, error) {
 				cmd := exec.Command("poweroff")
 				cmd.Start()
-				time.Sleep(2 * time.Second)
+				time.Sleep(5 * time.Second)
 				return nil, nil
 			})
 		default:
