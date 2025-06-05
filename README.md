@@ -1,8 +1,10 @@
 <div align="center">
 
-<h1 style="font-size: 25px;">
+<h1 style="font-size: 45px;">
     NextUI Power Menu
 </h1>
+
+<img src=".github/resources/screenshots/1.png" width="auto" alt="Preview">
 
 ## [Download this in Pak Store!](https://github.com/UncleJunVIP/nextui-pak-store)
 
