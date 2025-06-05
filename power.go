@@ -62,7 +62,7 @@ func main() {
 
 		case "Shutdown":
 			gaba.ProcessMessage("Shutting down...", gaba.ProcessMessageOptions{ShowThemeBackground: true}, func() (interface{}, error) {
-				cmd := exec.Command("shutdown", "-h", "now")
+				cmd := exec.Command("poweroff")
 				cmd.Start()
 				time.Sleep(2 * time.Second)
 				return nil, nil
